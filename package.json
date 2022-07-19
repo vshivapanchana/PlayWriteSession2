@@ -1,0 +1,22 @@
+{
+  "name": "playwritesession2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "testHead": "npx playwright test ",
+    "smoke": "npx playwright test --grep @smoke ",
+    "regression": "npx playwright test --grep @regression",
+    "devsmoke"  : "npx playwright test --project=dev --grep @smoke",
+    "qasmoke"  : "npx playwright test --project qa --grep @smoke"
+
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.23.4",
+    "playwright": "^1.23.4"
+  }
+}
